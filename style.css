@@ -8,6 +8,12 @@
 :root{
     --primary: #ffe400;
     --secundary: #333333;
+    --alternative: #444444;
+}
+
+body{
+    background-color: var(--secundary);
+    width: 98vw;
 }
 
 /*HEADER*/
@@ -61,4 +67,60 @@ nav{
     height: 2px;
     background: #fff;
     margin: 8px;
+}
+
+
+/*Banners*/
+
+.banner{
+    width: 99vw;
+    height: 85vh;
+    background-image: url(assets/banner_teste.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Main*/
+
+.article{
+    width: 98vw;
+    height: 85vh;
+    text-align: center;
+    padding-top: 20px;
+    background-color: var(--secundary);
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: var(--primary);
+}
+
+.conteudo{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.conteudo .txt1{
+    width: 60%;
+    margin-top: 150px;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--alternative);
+    color: #ffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.conteudo .img{
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+    margin-top: 150px;
+    border-radius: 50%;
+    margin-left: 15%;
 }
