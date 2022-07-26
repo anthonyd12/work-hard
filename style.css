@@ -75,9 +75,32 @@ nav{
 .banner{
     width: 99vw;
     height: 85vh;
-    background-image: url(assets/banner_teste.jpg);
+    background-image: url(assets/teste.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.title-principal{
+    margin-left: 30vh;
+    margin-top: 101px;
+    font-size: 65px;
+    color: var(--primary);
+    letter-spacing: 30px;
+    animation-name: titleMove;
+    animation-duration: 2s;
+}
+
+@keyframes titleMove{
+    from{
+        letter-spacing: -30px;
+    }
+    to{
+        letter-spacing: 30px;
+    }
 }
 
 /*Main*/
@@ -116,13 +139,23 @@ nav{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.conteudo .img{
+#bola1{
     background-color: #fff;
     width: 300px;
     height: 300px;
     margin-top: 150px;
     border-radius: 50%;
     margin-left: 10%;
+    z-index: 1;
+}
+#bola2{
+    background-color: var(--primary);
+    width: 300px;
+    height: 300px;
+    margin-top: 150px;
+    border-radius: 50%;
+    margin-left: -20%;
+    z-index: 0;
 }
 
 .pj{
@@ -132,6 +165,7 @@ nav{
     flex-direction: column;
     margin-top: 20px;
     padding-top: 20px;
+    margin: auto;
 }
 
 .conteudo .pj .img-link{
@@ -164,3 +198,105 @@ nav{
     margin: auto;
 }
 
+/*Orçamento*/
+
+.orcamento{
+    width: 100%;
+    height: 85vh;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.orcamento-container{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.form{
+    width: 40%;
+    height: 60vh;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+
+.form form{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    border: 2px solid black;
+    box-shadow: 1px 2px 2px black;
+    margin-top: 20px;
+}
+
+form .label{
+    height: 10%;
+    width: 95%;
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+form .mensagem{
+    height: 55%;
+    width: 95%;
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.contacts{
+    width: 40%;
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contacts .box {
+    display: flex;
+}
+
+.box{
+    margin-top: 5vh;
+}
+
+.box .img-social{
+    width: 50px;
+    height: 50px;
+}
+
+#icon-wpp{
+    background-image: url(assets/icons-face.png);
+}
+
+.box .contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.box a{
+    text-decoration: none;
+    color: var(--secundary);
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 1;
+    transition: 0.3 all ease;
+}
+
+.box a:hover{
+    opacity: 0.7;
+}
