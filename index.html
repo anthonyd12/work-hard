@@ -13,11 +13,10 @@
         <nav>
           <a class="logo1" href="/">Work Hard Productions</a>
           <ul class="nav-list">
-            <li><a class="link" href="/">Home</a></li>
-            <li><a class="link" href="/">Sobre</a></li>
-            <li><a class="link" href="/">Projetos</a></li>
-            <li><a class="link" href="/">Redes</a></li>
-            <li><a class="link" href="/">Solicitar Orçamento</a></li>
+            <li><a class="link" href="/" onclick="Home()">Home</a></li>
+            <li><a class="link" href="/" onclick="Sobre()">Sobre</a></li>
+            <li><a class="link" href="/" onclick="Projetos()">Projetos</a></li>
+            <li><a class="link" href="/" onclick="Orcamento()">Solicitar Orçamento</a></li>
           </ul>
         </nav>
       </header>
@@ -76,6 +75,7 @@
               <input class="label" type="email" placeholder="Insira seu Email"/>
               <input class="label" type="tel" placeholder="Insira seu Telefone(cel)"/>
               <input class="mensagem" type="text" placeholder="Deixe sua mensagem"/>
+              <button class="button-send">Enviar</button>
             </form>
           </div>
           <div class="contacts">
@@ -99,5 +99,15 @@
         </div>
       </section>
 
+      <footer>
+        <p>&copy; Work Hard Productions</p><br>
+        <div class="socials-footer">
+          <a href="https://github.com/anthonyd12" target="_blank"><img src="assets/icons-github.png" class="footer-img" id="github"/></a>
+          <a href="https://instagram.com/workhardproductionsbr" target="_blank"><img src="assets/icons-insta.png" class="footer-img" id="insta"/></a>
+          <a href="https://twitter.com/whproductionsbr" target="_blank"><img src="assets/icons-twiiter.png" class="footer-img" id="twitter"/></a>
+        </div>
+      </footer>
+      
+      <script src="script.js"></script>
 </body>
 </html>
