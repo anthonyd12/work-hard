@@ -29,6 +29,16 @@ header nav a{
     color: var(--secundary);
     text-decoration: none;
 }
+
+#title1{
+    visibility: visible;
+}
+
+#title2{
+    overflow: hidden;
+    visibility: hidden;
+}
+
 .link{
     color: var(--secundary);
     text-decoration: none;
@@ -42,6 +52,17 @@ header nav a{
     text-transform: uppercase;
     letter-spacing: 4px;
     opacity: 1;
+}
+@media (max-width: 1060px){
+    #title1{
+       visibility: hidden;
+    }
+    #title2{
+        visibility: visible;
+        overflow: visible;
+        margin-left: 50%;
+        font-size: 30px;
+    }
 }
 
 /*NAV*/
@@ -71,6 +92,12 @@ nav{
     margin: 8px;
 }
 
+@media (max-width: 1060px){
+    .nav-list{
+        visibility: hidden;
+    }
+}
+
 
 /*Banners*/
 
@@ -88,8 +115,7 @@ nav{
 }
 
 .title-principal{
-    margin-left: 30vh;
-    margin-top: 101px;
+    margin: 50%;
     font-size: 65px;
     color: var(--primary);
     letter-spacing: 30px;
@@ -106,9 +132,34 @@ nav{
     }
 }
 
+@media (max-width: 1060px){
+    .title-principal{
+        font-size: 50px;
+        letter-spacing: 5px;
+        margin: auto;
+    }
+
+    @keyframes titleMove{
+        from{
+            letter-spacing: -30px;
+        }
+        to{
+            letter-spacing: 5px;
+        }
+    }
+}
+
 /*Main*/
 
 .article{
+    width: 100%;
+    height: 85vh;
+    text-align: center;
+    margin-top: 20px;
+    background-color: var(--secundary);
+    font-family: var(--principal);
+}
+.article2{
     width: 100%;
     height: 85vh;
     text-align: center;
@@ -200,6 +251,35 @@ nav{
     text-align: justify;
     padding: 0 10px;
     margin: auto;
+}
+
+@media (max-width: 1060px){
+    .article{
+        height: 800px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .conteudo{
+        flex-direction: column;
+    }
+    .conteudo .txt1{
+        margin: auto;
+        width: 85%;
+    }
+    #bola1{
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #bola2{
+        margin: auto;
+        margin-top: -310px;
+        margin-left: 80px;
+    }
+    .article2{
+        height: 1200px;
+    }
 }
 
 /*Orçamento*/
@@ -324,6 +404,43 @@ form .mensagem{
 
 .box a:hover{
     opacity: 0.7;
+}
+
+@media (max-width: 1060px){
+    .orcamento{
+        height: 800px;
+    }
+    .orcamento-container{
+        flex-direction: column;
+    }
+    .form{
+        width: 90%;
+        height: 70vh;
+        margin: auto;
+        margin-top: 2vh;
+        border-radius: 10px;
+    }
+    .contacts{
+        height: 30vh;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .box .img-social{
+        width: 30px;
+        height: 30px;
+    }
+    .box .contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2vw;
+        font-size: 20px;
+    }
 }
 
 /*Footer*/
