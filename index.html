@@ -6,24 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Hard Productions</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/WH-PNG.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
+      <div class="title-1"><a class="logo1" href="/" id="title1">Work Hard<br>Productions</a></div>
         <nav>
-          <a class="logo1" href="/" id="title1">Work Hard Productions</a>
-          <a class="logo1" href="/" id="title2">WH</a>
+          
+
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          
           <ul class="nav-list">
-            <li><a class="link" href="#home"onclick="home()">Home</a></li>
-            <li><a class="link" href="#sobre"onclick="sobre()">Sobre</a></li>
-            <li><a class="link" href="#projetos"onclick="projetos()">Projetos</a></li>
-            <li><a class="link" href="#orcamento"onclick="orcamento()">Solicitar Orçamento</a></li>
+            <li><a class="link" href="#home">Home</a></li>
+            <li><a class="link" href="#sobre">Sobre</a></li>
+            <li><a class="link" href="#projetos"onclick="">Projetos</a></li>
+            <li><a class="link" href="#orcamento">Solicitar Orçamento</a></li>
           </ul>
         </nav>
       </header>
 
       <div class="banner">
-        <h1 class="title-principal">Work Hard <br>
+        <h1 class="title-principal" id="principal">Work Hard <br>
         Productions</h1>
       </div>
 
@@ -40,7 +47,7 @@
         <h1 class="title" id="projetos">Projetos:</h1>
         <div class="conteudo">
           <div class="pj">
-            <div class="img-link"></div>
+            <div class="img-link" id="contador"></div>
             <h2>Contador</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex consequatur re
               pudiandae commodi aliquid, praesentium ratione dolorem quos soluta? Fugit accusamus possim
@@ -105,6 +112,6 @@
         </div>
       </footer>
       
-      <script src="script.js"></script>
+      <script src="menu-drop.js"></script><script src="script.js"></script>
 </body>
 </html>

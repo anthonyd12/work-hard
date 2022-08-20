@@ -1,3 +1,4 @@
+let homePag = document.getElementById('principal');
 let sobrePag = document.querySelector("#sobre");
 let projetosPag = document.querySelector("#projetos");
 let orcamentoPag = document.getElementById('orcamento');
@@ -13,7 +14,8 @@ function scroll() {
     })
 }
 
-sobrePag.addEventListener(`click`, scrool);
-projetosPag.addEventListener(`click`, scrool);
-orcamentoPag.addEventListener(`click`, scrool);
+homePag.addEventListener(`click`);
+sobrePag.addEventListener(`click`);
+projetosPag.addEventListener(`click`);
+orcamentoPag.addEventListener(`click`);
 
