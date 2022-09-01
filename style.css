@@ -283,7 +283,7 @@ nav{
 }
 
 .conteudo .pj .img-link{
-    background-image: url(assets/WH.png);
+    background-image: url(assets/whmusic.png);
     width: 300px;
     height: 200px;
     background-size: cover;
@@ -339,8 +339,8 @@ nav{
         margin-left: 80px;
     }
     .article2{
-        margin-top: 250px;
-        height: 1400px;
+        margin-top: 165px;
+        height: 1150px;
     }
 }
 
